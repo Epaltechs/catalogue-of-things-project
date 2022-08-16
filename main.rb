@@ -1,26 +1,51 @@
 require './app'
 
-def display_list
-  puts 'WELCOME TO CATALOG OF MY THINGS APP!'
-  puts ' Choose an option by entering a number:'
-  puts "
-    1. List all books
-    2. List all music albums
-    3. List all movies
-    4. List of games
-    5. List all genres (e.g 'Comedy', 'Thriller')
-    6. List all labels (e.g. 'Gift', 'New')
-    7. List all authors (e.g. 'Stephen King')
-    8. List all sources (e.g. 'From a friend', 'Online shop')
-    9. Add a book
-    10. Add a music album
-    11. Add a movie
-    12. Add a game
-    13. Exit"
-end
-
 def main
   app = App.new
+  app.run
 end
-main
 
+def display_list
+  puts 'WELCOME TO CATALOG OF MY THINGS APP!'
+  puts 'Please choose an option by entering a number'
+  puts
+  puts '1 - List all books'
+  puts '2 - List all labels'
+  puts '3 - List all musics'
+  puts '4 - List all genres'
+  puts '5 - List all games'
+  puts '6 - List all authors'
+  puts '7 - Create a book'
+  puts '8 - Create an album'
+  puts '9 - Create a game'
+  puts '10 - Exit'
+end
+
+def option(input)
+  case input
+  when '1'
+    list_books
+  when '2'
+    list_labels
+  when '3'
+    list_albums
+  when '4'
+    list_genres
+  when '5'
+    list_games
+  when '6'
+    list_authors
+  when '7'
+    add_book
+  when '8'
+    add_album
+  when '9'
+    add_game
+  when '10'
+    Exit
+  else
+    puts 'Please choose the correct option...'
+  end
+end
+
+main
