@@ -22,5 +22,4 @@ end
 def main
   app = App.new
 end
-main
 
