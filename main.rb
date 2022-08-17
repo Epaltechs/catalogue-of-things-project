@@ -5,11 +5,6 @@ def main
   app.run
 end
 
-def main
-  app = App.new
-  # app.run
-end
-
 def display_list
   puts 'WELCOME TO CATALOG OF MY THINGS APP!'
   puts 'Please choose an option by entering a number'
@@ -43,7 +38,7 @@ def option(input)
   when '7'
     add_book
   when '8'
-    add_album
+    create_album
   when '9'
     add_game
   when '10'

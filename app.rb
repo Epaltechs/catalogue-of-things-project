@@ -1,3 +1,6 @@
+require_relative 'music_album'
+require_relative ''
+
 class App
   def initialize
     @genres = []
@@ -6,6 +9,21 @@ class App
     @all_labels = []
     @games = []
     @authors = []
+  end
+
+  def run
+    
+    puts 'Welcome To The Catalog of My Things!'
+    puts
+    puts
+    until display_list
+      input = gets.chomp
+      if input == '10'
+        puts 'Thank you! :)'
+        break
+      end
+      option(input)
+    end
   end
 
   def create_album
