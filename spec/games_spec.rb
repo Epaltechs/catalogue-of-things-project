@@ -11,7 +11,7 @@ describe Game do
   end
   context 'when archiving a game' do
     it 'it returns true if the game can be archived' do
-      expect(@game.can_be_archived?).to be true
+      expect(@game.can_be_archived?).to eq(false)
     end
   end
 end
