@@ -1,12 +1,19 @@
 require './item'
 
 class MusicAlbum < Item
-  attr_accessor :artist_name, :publish_date, :on_spotify
+  attr_accessor :on_spotify, :name
 
-  def initialize(on_spotify, publish_date: Time.now, archived: nil, id: rand(1..1000))
-    super(publish_date, archived: archived, id: id)
-    @on_spotify = on_spotify
+  attr_reader :publish_date
+
+  def initialize(publish_date, name, on_spotify)
+    super(publish_date)
+
+    @on_spotify = on_spotify.downcase == 'y'
+
+    @name = name
   end
+
+  private
 
   def can_be_archived?
     super && @on_spotify
