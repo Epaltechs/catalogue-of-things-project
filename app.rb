@@ -57,4 +57,25 @@ class App
     puts
     sleep 0.75
   end
+
+  def list_books
+    puts
+    puts 'There are no books to show! Please add a book.' if @all_books.empty?
+
+    @all_books.each do |book|
+      puts '--------------------'
+      puts "ID: #{book.id}"
+      puts "Publisher: #{book.publisher}"
+      puts "Cover State: #{book.cover_state}"
+      puts "Label: \'#{book.title}\', \'#{book.label.color}\'"
+      puts "Publish date: #{book.publish_date}"
+      puts '--------------------'
+      puts
+    end
+    puts
+    puts
+    sleep 0.75
+  end
+
+  
 end
