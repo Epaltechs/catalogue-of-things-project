@@ -15,11 +15,5 @@ describe Author do
       expect(@author).to be_an_instance_of Author
     end
   end
-  context 'when attaching a game to an author' do
-    it 'adds the game to a specific author' do
-      @author.add_item(@game)
-      expect(@author.item).to include(@game)
-      expect(@author.item.length).to eq(1)
-    end
-  end
+
 end
