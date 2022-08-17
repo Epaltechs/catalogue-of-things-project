@@ -18,8 +18,8 @@ describe Author do
   context 'when attaching a game to an author' do
     it 'adds the game to a specific author' do
       @author.add_item(@game)
-      expect(@author.games.item).to include(@game)
-      expect(@author.games.item.length).to eq(1)
+      expect(@author.item).to include(@game)
+      expect(@author.item.length).to eq(1)
     end
   end
 end
