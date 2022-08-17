@@ -12,12 +12,12 @@ describe Author do
   end
   context 'When retrieving the first name of author' do
     it 'it returns the first name of the author' do
-      expect(@author.first_name).to be_an_instance_of Author
+      expect(@author).to be_an_instance_of Author
     end
   end
   context 'when attaching a game to an author' do
     it 'adds the game to a specific author' do
-      @author.add_game(@game)
+      @author.add_item(@game)
       expect(@author.games.item).to include(@game)
       expect(@author.games.item.length).to eq(1)
     end
