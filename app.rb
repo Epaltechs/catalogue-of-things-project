@@ -1,7 +1,9 @@
-require './music_album'
-require './book'
-require './label'
-require './genre'
+require_relative 'book'
+require_relative 'label'
+require_relative 'data/data_book'
+require_relative 'music_album'
+require_relative 'genre'
+require 'date'
 
 class App
   def initialize
