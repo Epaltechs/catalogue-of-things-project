@@ -1,7 +1,7 @@
-require_relative 'item'
+require './item'
 require 'date'
 
-class Book < item
+class Book < Item
   attr_accessor :publisher, :cover_state
 
   def initialize(publisher, cover_state, publish_date)
