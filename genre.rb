@@ -1,22 +1,17 @@
-require './music_album'
+require './item'
+class Game < Item
+  attr_accessor :multiplayer, :last_played_at
 
-class Genre
-  attr_reader :items, :name, :id
-
-  def initialize(name, id: rand(1..1000))
-    @id = id
-  attr_accessor :items, :name
-
-  def initialize(name)
-    @id = Random.rand(1..1000)
-    @name = name
-    @items = []
+  def initialize(multiplayer, last_played_at, publish_date)
+    super(publish_date)
+    @multiplayer = multiplayer
+    @last_played_at = last_played_at
   end
 
-  def add_item(item)
-    @items << item
-    item.genres = self
-    @items.push(item)
-    item.genre = self
+  # private
+  def can_be_archived?
+    current_year = Time.new.year
+    seniority = current_year - @last_played_at.year
+    super && seniority > 2
   end
 end
