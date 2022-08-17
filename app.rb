@@ -14,7 +14,7 @@ class App
   def run
     puts
     puts
-    until option
+    until display_list
       input = gets.chomp
       if input == '10'
         puts 'Thank you! :)'
