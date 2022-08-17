@@ -82,7 +82,7 @@ class App
     puts 'There are no labels to show! Please add a label.' if @all_labels.empty?
 
     @all_labels.each { |label| puts "ID: \'#{label.id}\', Title: \'#{label.title}\', Color: \'#{label.color}\'" }
-    puts 
+    puts
     puts
     sleep 0.75
   end
