@@ -1,5 +1,5 @@
-reqiure './game'
-reqiure './author'
+require './game'
+require './author'
 describe Game do
   before :each do
     @game = Game.new('Jackson', Date.parse('2008-01-11'), Date.parse('2005-09-05'))

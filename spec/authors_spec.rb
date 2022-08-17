@@ -1,5 +1,5 @@
-reqiure './game'
-reqiure './author'
+require './game'
+require './author'
 describe Author do
   before :all do
     @author = Author.new('J.K. Rowling', 'Harry Potter')
