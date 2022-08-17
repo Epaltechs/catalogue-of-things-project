@@ -5,6 +5,11 @@ def main
   app.run
 end
 
+def main
+  app = App.new
+  # app.run
+end
+
 def display_list
   puts 'WELCOME TO CATALOG OF MY THINGS APP!'
   puts 'Please choose an option by entering a number'

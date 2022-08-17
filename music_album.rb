@@ -1,14 +1,21 @@
 require './item'
 
 class MusicAlbum < Item
-  attr_accessor :on_spotify
+  attr_accessor :on_spotify, :name
 
-  def initialize(on_spotify, publish_date)
+  attr_reader :publish_date
+
+  def initialize(publish_date, name, on_spotify)
     super(publish_date)
-    @on_spotify = on_spotify
+
+    @on_spotify = on_spotify.downcase == 'y'
+
+    @name = name
   end
 
-  def can_be_archived?()
-    true if super() && @on_spotify
+  private
+
+  def can_be_archived?
+    super && @on_spotify
   end
 end
