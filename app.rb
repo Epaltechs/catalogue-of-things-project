@@ -12,7 +12,7 @@ class App
     @games = []
     @authors = []
   end
-  
+
   def run
     puts
     puts
@@ -39,7 +39,7 @@ class App
     print 'Label color: '
     book_label_color = gets.chomp
 
-    print 'Publish date (DD-MM-YEAR): '
+    print 'Publish date (DD-MM-YYYY): '
     book_publish_date = gets.chomp
 
     puts

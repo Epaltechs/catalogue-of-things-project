@@ -36,7 +36,7 @@ def option(input)
   when '6'
     list_authors
   when '7'
-    add_book
+    create_book
   when '8'
     create_album
   when '9'
