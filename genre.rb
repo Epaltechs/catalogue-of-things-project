@@ -1,17 +1,14 @@
-require './item'
-class Game < Item
-  attr_accessor :multiplayer, :last_played_at
+class Genre
+  attr_accessor :items, :name
 
-  def initialize(multiplayer, last_played_at, publish_date)
-    super(publish_date)
-    @multiplayer = multiplayer
-    @last_played_at = last_played_at
+  def initialize(name)
+    @id = Random.rand(1..1000)
+    @name = name
+    @items = []
   end
 
-  # private
-  def can_be_archived?
-    current_year = Time.new.year
-    seniority = current_year - @last_played_at.year
-    super && seniority > 2
+  def add_item(item)
+    @items << item
+    item.add_genre(self)
   end
 end
