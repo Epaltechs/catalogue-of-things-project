@@ -5,5 +5,19 @@
     "book_label_title": "The Punisher",
     "book_label_color": "green",
     "book_publish_date": "12-02-1999"
+  },
+  {
+    "book_publisher": "AAA",
+    "book_cover_state": "good",
+    "book_label_title": "The Publisher",
+    "book_label_color": "green",
+    "book_publish_date": "12-12-2000"
+  },
+  {
+    "book_publisher": "BBB",
+    "book_cover_state": "Good",
+    "book_label_title": "The Student",
+    "book_label_color": "blue",
+    "book_publish_date": "03-10-1996"
   }
 ]
