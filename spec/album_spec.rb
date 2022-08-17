@@ -3,13 +3,13 @@ require 'date'
 
 describe MusicAlbum do
   it 'has a name' do
-    date = Date.parse('28-03-1994')
-    album = MusicAlbum.new(date, 'The Cure', 'y')
-    expect(album.name).to eq('The Cure')
+    date = Date.parse('15-03-1995')
+    album = MusicAlbum.new(date, 'My Sunshine', 'y')
+    expect(album.name).to eq('My Sunshine')
   end
   it 'returns the correct year' do
-    date = Date.parse('28-03-1994')
-    album = MusicAlbum.new(date, 'The Cure', 'y')
-    expect(album.publish_date.year).to eq(1994)
+    date = Date.parse('15-03-1995')
+    album = MusicAlbum.new(date, 'My Sunshine', 'y')
+    expect(album.publish_date.year).to eq(1995)
   end
 end
