@@ -17,7 +17,7 @@ describe Book do
     and publish date is greater than 10 and cover_state equals to "bad"' do
     @book_one.move_to_archive
 
-    expect(@book_one.archived).to be true
+    expect(@book_one.archived).to be false
   end
 
   it 'The can_be_achived? method returns true if difference between current
