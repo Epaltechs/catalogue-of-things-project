@@ -1,4 +1,4 @@
-# require_relative './musicalbum'
+require './music_album'
 
 class Genre
   attr_reader :items, :name, :id
