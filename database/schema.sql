@@ -1,0 +1,15 @@
+CREATE DATABASE Catalog_of_Things;
+
+CREATE TABLE books (
+    id INT GENERATED ALWAYS AS IDENTITY,
+    publisher VARCHAR(255),
+    cover_sate VARCHAR(255),
+    publish_date DATE,
+    archived BOOLEAN,
+    label_id INT 
+    PRIMARY KEY(id)
+);
+
+ALTER TABLE books ADD FOREIGN KEY (label_id) REFERENCES labels(id) ON DELETE CASCADE;
+
+CREATE INDEX index_label_id ON books (label_id);
