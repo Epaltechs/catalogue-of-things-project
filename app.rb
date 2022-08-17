@@ -77,5 +77,13 @@ class App
     sleep 0.75
   end
 
-  
+  def list_labels
+    puts
+    puts 'There are no labels to show! Please add a label.' if @all_labels.empty?
+
+    @all_labels.each { |label| puts "ID: \'#{label.id}\', Title: \'#{label.title}\', Color: \'#{label.color}\'" }
+    puts 
+    puts
+    sleep 0.75
+  end
 end
