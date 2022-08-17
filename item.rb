@@ -30,7 +30,7 @@ class Item
 
   def add_source(source)
     @source = source
-    source.items << slef unless source.items.include?(self)
+    source.items << self unless source.items.include?(self)
   end
 
   private

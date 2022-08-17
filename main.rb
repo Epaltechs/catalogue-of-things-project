@@ -1,12 +1,19 @@
-require './app'
+require "./app"
+
+def main
+  app = App.new
+  app.run
+end
 
 def main
   app = App.new
   # app.run
 end
 
-def list_options
+def display_list
+  puts 'WELCOME TO CATALOG OF MY THINGS APP!'
   puts 'Please choose an option by entering a number'
+  puts
   puts '1 - List all books'
   puts '2 - List all labels'
   puts '3 - List all musics'
@@ -34,11 +41,13 @@ def option(input)
   when '6'
     list_authors
   when '7'
-    create_book
+    add_book
   when '8'
-    create_album
+    add_album
   when '9'
-    create_game
+    add_game
+  when '10'
+    Exit
   else
     puts 'Please choose the correct option...'
   end
