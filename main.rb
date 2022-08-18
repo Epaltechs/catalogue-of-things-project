@@ -1,5 +1,7 @@
 require './app'
 
+# rubocop:disable Metrics
+
 def main
   app = App.new
   app.run
@@ -40,7 +42,9 @@ def option(input)
   when '8'
     create_album
   when '9'
-    add_game
+
+    create_game
+
   when '10'
     Exit
   else
@@ -49,3 +53,5 @@ def option(input)
 end
 
 main
+
+# rubocop:enable Metrics
