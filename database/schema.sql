@@ -33,3 +33,21 @@ CREATE TABLE MusicAlbum(
   FOREIGN KEY(id) REFERENCES item(id) ON UPDATE CASCADE
 );
 
+/* create games authors */
+
+CREATE TABLE authors (
+id INT PRIMARY KEY GENERATED ALWAYS AS IDENTITY,
+first_name VARCHAR(200) NOT NULL,
+last_name VARCHAR(200) NOT NULL,
+)
+
+/* creates games table */
+
+CREATE TABLE games (
+id INT PRIMARY KEY GENERATED ALWAYS AS IDENTITY,
+author_id INT NOT NULL,
+ multiplayer VARCHAR(200) NOT NULL,
+ last_played_at DATE,
+ FOREIGN KEY (author_id) REFERENCES authors(id)
+)
+

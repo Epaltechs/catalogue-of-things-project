@@ -33,5 +33,12 @@
     "book_label_title": "the avenger",
     "book_label_color": "rosa",
     "book_publish_date": "22-03-2008"
+  },
+  {
+    "book_publisher": "XXX",
+    "book_cover_state": "good",
+    "book_label_title": "X-men",
+    "book_label_color": "black",
+    "book_publish_date": "10-12-1889"
   }
 ]
