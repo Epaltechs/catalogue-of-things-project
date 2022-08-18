@@ -3,7 +3,7 @@ require_relative './author'
 require 'json'
 
 def file_loader(allgames, allauthors) # rubocop:todo Metrics/MethodLength
-  store = './module/games.json'
+  store = './data/games.json'
   if File.exist?(store)
     file = File.open(store)
 
@@ -28,16 +28,16 @@ def file_loader(allgames, allauthors) # rubocop:todo Metrics/MethodLength
   end
 end
 
-def save_file(_item)
-  File.new('.module/games.json', 'w+') unless File.exist?('./module/games.json')
-  if File.empty?('./module/games.json')
+def save_file(item)
+  File.new('.data/games.json', 'w+') unless File.exist?('./data/games.json')
+  if File.empty?('./data/games.json')
     games = []
   else
-    data = File.read('./module/games.json').split
+    data = File.read('./data/games.json').split
     games = JSON.parse(data.join)
   end
-  games.push({ 'multiplayer' => game.multiplayer, 'last_played_at' => game.last_played_at,
-               'publish_date' => game.publish_date, 'first_name' => game.author.first_name,
-               'last_name' => game.author.last_name })
-  File.write('./module/games.json', JSON.generate(games))
+  games.push({ 'multiplayer' => item.multiplayer, 'last_played_at' => item.last_played_at,
+               'publish_date' => item.publish_date, 'first_name' => item.author.first_name,
+               'last_name' => item.author.last_name })
+  File.write('./data/games.json', JSON.generate(games))
 end
