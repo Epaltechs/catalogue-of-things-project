@@ -48,7 +48,10 @@ Kindly modify the files as needed.
 - [LinkedIn](https://www.linkedin.com/in/emmanuel-s-paul)
 - [AngeList](https://angel.co/u/emmanuel-s-paul)
 
-
+👤 Yusuf Nviiri
+- GitHub: [@yusufnviiri](https://github.com/yusufnviiri)
+- Twitter: [@YNviiri](https://twitter.com/YNviiri)
+- LinkedIn: [yusufnviiri]( https://www.linkedin.com/in/yusuf-nviiri-8b4146206/)
 
 ## 🤝 Contributing
 

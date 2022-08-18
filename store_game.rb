@@ -2,7 +2,7 @@ require_relative './game'
 require_relative './author'
 require 'json'
 
-def file_loader(allgames, allauthors) # rubocop:todo Metrics/MethodLength
+def file_loader(allgames, allauthors)
   store = './data/games.json'
   if File.exist?(store)
     file = File.open(store)
