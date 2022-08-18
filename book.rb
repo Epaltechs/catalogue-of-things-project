@@ -14,6 +14,6 @@ class Book < Item
   private
 
   def can_be_archived?
-    Time.now.year - Date.parse(@publish_date).year > 10 || @cover_state == 'bad'
+    true if super || @cover_state == 'bad'
   end
 end
