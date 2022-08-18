@@ -22,16 +22,10 @@ The video link that gives the description of the project.
 - [x] A code editor like Visual Studio Code with Git and Ruby.
 
 You can check if Git is installed by running the following command in the terminal.
-```
-$ git --version
-```
 
 Likewise for Ruby installation.
-```
-$ ruby --version && irb
-```
 
-```
+$ ruby --version && irb
 
 ### Usage
 
@@ -58,11 +52,7 @@ Kindly modify the files as needed.
 [Twitter](https://twitter.com/YNviiri)
 [LinkedIn](https://www.linkedin.com/in/yusuf-nviiri-8b4146206/)
 
-<<<<<<< HEAD
-[Video presentation](https://drive.google.com/file/d/1J05jBp2c400_pJANqGQQc9J5UrKtnrZn/view?usp=sharing)
 
-=======
->>>>>>> 1ae99cc5c8ea0e13f8b6f16c1f56d4f3fde761bf
 ## 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome!
