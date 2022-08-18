@@ -2,6 +2,8 @@ require './music_album'
 require './book'
 require './label'
 require './genre'
+require './data/data_album'
+require './data/retrieve_data'
 
 class App
   def initialize
@@ -110,9 +112,9 @@ class App
 
     genre.add_item(album)
 
-    # save_album(date, name, genre_name, on_spotify)
+    save_album(date, name, genre_name, on_spotify)
 
-    puts "#{name} It has been added to the list. ✅"
+    puts "#{name} Has been added to the list. 🤝"
   end
 
   def list_genres
