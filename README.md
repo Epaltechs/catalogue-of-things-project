@@ -2,6 +2,7 @@
 > This is a console application project that will help us to keep a record of different types of things we own namely: books, music albums, and games. The application allows you to perform some CRUD operations such as adding new items, reading the items that you have saved, and saving items to .json files
 
 ![screenshot](./screenshot.png)
+![Video Presentation](https://drive.google.com/file/d/1J05jBp2c400_pJANqGQQc9J5UrKtnrZn/view?usp=sharing)
 
 ## Built With
 
@@ -55,7 +56,7 @@ Kindly modify the files as needed.
 - [Twitter](https://twitter.com/YNviiri)
 - [LinkedIn](https://www.linkedin.com/in/yusuf-nviiri-8b4146206/)
 
-## [Video presentation](https://drive.google.com/file/d/1J05jBp2c400_pJANqGQQc9J5UrKtnrZn/view?usp=sharing)
+## [Video presentation]()
 
 ## 🤝 Contributing
 
