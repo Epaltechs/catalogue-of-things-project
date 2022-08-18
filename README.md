@@ -58,8 +58,6 @@ Kindly modify the files as needed.
 - [Twitter](https://twitter.com/YNviiri)
 - [LinkedIn](https://www.linkedin.com/in/yusuf-nviiri-8b4146206/)
 
-## [Video presentation]()
-
 ## 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome!
