@@ -4,6 +4,8 @@ require './label'
 require './genre'
 require './data/data_album'
 require './data/retrieve_data'
+require 'date'
+
 
 class App
   def initialize
@@ -16,12 +18,14 @@ class App
   end
 
   def run
+    load_preserve_data
+    puts 'Welcome To The Catalog of My Things!'
     puts
     puts
     until display_list
       input = gets.chomp
       if input == '10'
-        puts 'Thank you! :)'
+        puts 'Thank you!'
         break
       end
       option(input)
@@ -135,4 +139,8 @@ class App
       puts
     end
   end
+end
+
+def load_preserve_data
+  load_album_genre @albums, @genres
 end
