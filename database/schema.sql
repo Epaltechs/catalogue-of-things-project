@@ -13,3 +13,23 @@ CREATE TABLE books (
 ALTER TABLE books ADD FOREIGN KEY (label_id) REFERENCES labels(id) ON DELETE CASCADE;
 
 CREATE INDEX index_label_id ON books (label_id);
+
+/*
+- create Genre table
+*/
+
+CREATE TABLE Genre(
+  id INT PRIMARY KEY GENERATED ALWAYS AS IDENTITY,
+  name VARCHAR(60) NOT NULL
+);
+
+/*
+- create MusicAlbum table
+*/
+
+CREATE TABLE MusicAlbum(
+  id INT PRIMARY KEY GENERATED ALWAYS AS IDENTITY,
+  on_spotify BOOLEAN NOT NULL,
+  FOREIGN KEY(id) REFERENCES item(id) ON UPDATE CASCADE
+);
+

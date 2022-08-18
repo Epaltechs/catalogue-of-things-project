@@ -1,9 +1,11 @@
-require_relative 'book'
-require_relative 'label'
 require_relative 'data/data_book'
-require_relative 'music_album'
-require_relative 'genre'
 require 'date'
+require './music_album'
+require_relative './book'
+require './label'
+require './genre'
+require './data/data_album'
+require './data/retrieve_data'
 
 class App
   def initialize
@@ -85,7 +87,6 @@ class App
   def list_labels
     puts
     puts 'There are no labels to show! Please add a label.' if @all_labels.empty?
-
     @all_labels.each { |label| puts "Id: \'#{label.id}\', Title: \'#{label.title}\', Color: \'#{label.color}\'" }
     puts
     puts
@@ -112,10 +113,10 @@ class App
     @genres << genre
 
     genre.add_item(album)
+    
+    save_album(date, name, genre_name, on_spotify)
 
-    # save_album(date, name, genre_name, on_spotify)
-
-    puts "#{name} It has been added to the list. ✅"
+    puts "#{name} Has been added to the list. 🤝"
   end
 
   def list_genres
@@ -140,4 +141,5 @@ class App
   def load_preserve_data
     load_books_and_labels @all_books, @all_labels
   end
+
 end
