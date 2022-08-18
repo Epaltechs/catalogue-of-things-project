@@ -1,5 +1,7 @@
+require_relative 'data/data_book'
+require 'date'
 require './music_album'
-require './book'
+require_relative './book'
 require './label'
 require './genre'
 require './author'
@@ -19,6 +21,7 @@ class App
   end
 
   def run
+    load_preserve_data
     puts
     puts
     until display_list
@@ -74,7 +77,7 @@ class App
       puts "ID: #{book.id}"
       puts "Publisher: #{book.publisher}"
       puts "Cover State: #{book.cover_state}"
-      puts "Label: \'#{book.title}\', \'#{book.label.color}\'"
+      puts "Label: \'#{book.label.title}\', \'#{book.label.color}\'"
       puts "Publish date: #{book.publish_date}"
       puts '--------------------'
       puts
@@ -87,8 +90,7 @@ class App
   def list_labels
     puts
     puts 'There are no labels to show! Please add a label.' if @all_labels.empty?
-
-    @all_labels.each { |label| puts "ID: \'#{label.id}\', Title: \'#{label.title}\', Color: \'#{label.color}\'" }
+    @all_labels.each { |label| puts "Id: \'#{label.id}\', Title: \'#{label.title}\', Color: \'#{label.color}\'" }
     puts
     puts
     sleep 0.75
@@ -136,6 +138,10 @@ class App
       puts "ID: #{album.id}: Name: #{album.name} Genre: #{album.genre.name} On_Spotify: #{album.on_spotify}"
       puts
     end
+  end
+
+  def load_preserve_data
+    load_books_and_labels @all_books, @all_labels
   end
 
   def create_game

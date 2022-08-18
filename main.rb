@@ -1,4 +1,5 @@
 require './app'
+
 # rubocop:disable Metrics
 
 def main
