@@ -19,5 +19,12 @@
     "book_label_title": "The Student",
     "book_label_color": "blue",
     "book_publish_date": "03-10-1996"
+  },
+  {
+    "book_publisher": "AAA",
+    "book_cover_state": "bad",
+    "book_label_title": "ABC",
+    "book_label_color": "white",
+    "book_publish_date": "12-04-1999"
   }
 ]
