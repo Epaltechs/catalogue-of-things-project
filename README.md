@@ -38,24 +38,24 @@ Kindly modify the files as needed.
 
 👤 **Artur Gouveia**
 
-- [GitHub](https://github.com/Arturgouveia1970)
-- [Twitter](https://twitter.com/@arturgouveia10)
-- [LinkedIn](https://www.linkedin.com/in/artur-gouveia-323868197/)
+[GitHub](https://github.com/Arturgouveia1970)
+[Twitter](https://twitter.com/@arturgouveia10)
+[LinkedIn](https://www.linkedin.com/in/artur-gouveia-323868197/)
 
 👤 **Emmanuel Paul**
 
-- [GitHub](https://github.com/Epaltechs)
-- [Twitter](https://twitter.com/@emmapaul247)
-- [LinkedIn](https://www.linkedin.com/in/emmanuel-s-paul)
-- [AngeList](https://angel.co/u/emmanuel-s-paul)
+[GitHub](https://github.com/Epaltechs)
+[Twitter](https://twitter.com/@emmapaul247)
+[LinkedIn](https://www.linkedin.com/in/emmanuel-s-paul)
+[AngeList](https://angel.co/u/emmanuel-s-paul)
 
 👤 Yusuf Nviiri
 
-- [GitHub](https://github.com/yusufnviiri)
-- [Twitter](https://twitter.com/YNviiri)
-- [LinkedIn](https://www.linkedin.com/in/yusuf-nviiri-8b4146206/)
+[GitHub](https://github.com/yusufnviiri)
+[Twitter](https://twitter.com/YNviiri)
+[LinkedIn](https://www.linkedin.com/in/yusuf-nviiri-8b4146206/)
 
-## [Video presentation](https://drive.google.com/file/d/1J05jBp2c400_pJANqGQQc9J5UrKtnrZn/view?usp=sharing)
+[Video presentation](https://drive.google.com/file/d/1J05jBp2c400_pJANqGQQc9J5UrKtnrZn/view?usp=sharing)
 
 ## 🤝 Contributing
 
