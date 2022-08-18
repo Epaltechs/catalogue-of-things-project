@@ -1,0 +1,44 @@
+[
+  {
+    "book_publisher": "AAA",
+    "book_cover_state": "good",
+    "book_label_title": "The Punisher",
+    "book_label_color": "green",
+    "book_publish_date": "12-02-1999"
+  },
+  {
+    "book_publisher": "AAA",
+    "book_cover_state": "good",
+    "book_label_title": "The Publisher",
+    "book_label_color": "green",
+    "book_publish_date": "12-12-2000"
+  },
+  {
+    "book_publisher": "BBB",
+    "book_cover_state": "Good",
+    "book_label_title": "The Student",
+    "book_label_color": "blue",
+    "book_publish_date": "03-10-1996"
+  },
+  {
+    "book_publisher": "AAA",
+    "book_cover_state": "bad",
+    "book_label_title": "ABC",
+    "book_label_color": "white",
+    "book_publish_date": "12-04-1999"
+  },
+  {
+    "book_publisher": "Problems",
+    "book_cover_state": "bad",
+    "book_label_title": "the avenger",
+    "book_label_color": "rosa",
+    "book_publish_date": "22-03-2008"
+  },
+  {
+    "book_publisher": "XXX",
+    "book_cover_state": "good",
+    "book_label_title": "X-men",
+    "book_label_color": "black",
+    "book_publish_date": "10-12-1889"
+  }
+]
