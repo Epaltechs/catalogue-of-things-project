@@ -14,7 +14,7 @@ The video link that gives the description of the project.
 
 ## Getting Started
 
-- clone the repository git clone git@github.com:Arturgouveia1970/Catalog-ruby-capstone.git
+- clone the repository git clone git@github.com: https://github.com/Epaltechs/catalogue-of-things-project
 
 ### Prerequisites
 
